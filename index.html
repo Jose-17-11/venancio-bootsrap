@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Página web</title>
+</head>
+<body>
+    <!-- Header o menu de navegación -->
+    <header>
+        <h1>Mi página web</h1>
+        <nav>
+            <ul>
+                <li><a href="#acerca"> Acerca de</a></li>
+                <li><a href="#pasatiempos"> Pasatiempos</a></li>
+                <li><a href="#fotos"> Fotos</a></li>
+                <li><a href="#contacto"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Seccion de Acerca de mi -->
+        <section class="acerca" id="acerca" >
+            <article class="card-acerca" >
+                <figure class="card-acerca-img" >
+                    <img src="./assets/perfil.jpg" alt="Mi foto" class="card-acerca-img" >
+                </figure>
+                <p class="card-acerca-text" >
+                    Hola, soy <span class="text-span" >José Manuel Arias Hernández</span> un joven universitario de la carrera de Ing. Sistemas Computacionales, especialisado en el desarrollo web.
+                </p>
+            </article>
+        </section>
+        <!-- Sección de Pasatiempos -->
+         <section class="pasatiempos" id="pasatiempos" >
+            <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Pasatiempos en tiempos libres</h2>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li class="card-list"><span class="text-span" >Estudiar programación</span></li>
+                    <li class="card-list"><span class="text-span" >Jugar videojuegos</span></li>
+                    <li class="card-list"><span class="text-span" >Escuchar musica</span></li>
+                    <li class="card-list"><span class="text-span" >Dormir</span></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary facebook "><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" class="btn btn-primary instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="btn btn-primary tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="#" class="btn btn-primary linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+         </section>
+        <!-- Sección de fotos y o carrusel -->
+        <section class="main_container" id="fotos" >
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/perfil.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/michiyo-y-yo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/perfil.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev button-carrusel" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next button-carrusel" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- Area de contacto -->
+        <section class="contacto" id="contacto" >
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nombre</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Mensaje</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b664548b58.js" crossorigin="anonymous"></script>
+</body>
+</html>
